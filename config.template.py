@@ -43,3 +43,11 @@ live_events = {
 #  "json" - Logs in a JSON format, useful for Microsoft Excel.
 #  "csv" NOT IMPLEMENTED YET - Logs in a CSV format, useful for LibreOffice Calc.
 output_type = "json"
+
+
+
+
+
+
+
+data_dir = "data/"
