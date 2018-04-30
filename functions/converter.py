@@ -20,18 +20,26 @@ def JSON(data):
         response["character"] = GD.character_IDs[data["char"]]
         response["char_lvl"] = data["charlvl"]
 
-        response["killed_by"] = GD.enemy_IDs[data["lasthit"]]
 
         response["weapon_a"] = GD.weapon_IDs[data["wepA"]]
         response["weapon_b"] = GD.weapon_IDs[data["wepB"]]
 
+
+        response["crown"] = GD.crown_IDs[data["crown"]]
+
+
+        response["level"] = data["level"]
         response["world"] = "{}({})".format(
             GD.world_IDs[data["world"]],
             data["world"]
         )
-        response["level"] = data["level"]
 
-        response["crown"] = GD.crown_IDs[data["crown"]]
+
+        # Check if they died or quit the game
+        if data["health"] == 0:
+            response["killed_by"] = GD.enemy_IDs[data["lasthit"]]
+        else:
+            response["killed_by"] = "Exited game"
 
 
         #"0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0"
@@ -41,6 +49,6 @@ def JSON(data):
         for mutation in data["mutations"]:
             if mutation == "1":
                 response["mutations"].append(GD.mutation_IDs[bit_index])
-            bit_index = bit_index - 1
+            bit_index -= 1
 
         return response
