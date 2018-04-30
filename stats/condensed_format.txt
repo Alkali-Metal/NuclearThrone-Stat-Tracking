@@ -1,0 +1,13 @@
+Stats:
+Kills: {kills}
+Char Lvl:
+          {charlvl}
+Game Lvl:
+        {world}-{level}
+Loop: {loop}
+
+Weapon A:
+  {wepA}
+
+Weapon B:
+  {wepB}

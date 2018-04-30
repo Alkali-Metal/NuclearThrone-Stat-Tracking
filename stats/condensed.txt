@@ -1,0 +1,13 @@
+Stats:
+Kills: 0
+Char Lvl:
+          1
+Game Lvl:
+        1-1
+Loop: 0
+
+Weapon A:
+  Revolver
+
+Weapon B:
+  None
