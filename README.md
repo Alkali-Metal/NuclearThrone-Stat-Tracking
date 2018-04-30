@@ -1,5 +1,7 @@
 # Nuclear Throne Statistic Tracking
 
+Keep in mind that this software is relatively incomplete, it currently can ONLY live update data and store the finished runs in JSON. Nothing else.
+
 ## Installing
 
 Ensure that you have the following installed:
