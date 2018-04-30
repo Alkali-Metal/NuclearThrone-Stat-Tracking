@@ -13,6 +13,7 @@ steam_id = config.steam_ID
 game_id = config.game_stream_ID
 live_logging = config.live_logging
 output_type = config.output_type
+data_dir = config.data_dir
 try_count = 0
 current = None
 previous = None
@@ -30,7 +31,7 @@ url = "https://tb-api.xyz/stream/get?s={steam}&key={game}".format(
 def update(run):
     if run:
         if output_type == "json":
-            with open("data/data.json", "r") as file:
+            with open(data_dir + "data.json", "r") as file:
                 data = json.load(file)
 
             for run_object in data:
