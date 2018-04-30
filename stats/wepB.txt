@@ -1,2 +1,0 @@
-Weapon 2:
-   Nothing
