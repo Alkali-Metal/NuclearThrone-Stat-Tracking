@@ -1,5 +1,5 @@
-data/data.json
-data/data.csv
+alkali-data/*
+alkali-stats/*
 config.py
 
 # Byte-compiled / optimized / DLL files
