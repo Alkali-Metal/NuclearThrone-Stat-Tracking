@@ -1,0 +1,53 @@
+body {
+    background-color: #23272A;
+    text-align: center;
+    color: #7289DA
+}
+
+
+a:link {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+input {
+    margin: 5px;
+    color: #7289DA;
+    background-color: #23272A;
+    border-color: #7289DA;
+    border-bottom-color: #7289DA;
+    border-right-color: #7289DA;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 40px;
+    width: 20%;
+    padding: 10px;
+}
+
+button {
+    margin: 5px;
+    height: 40px;
+    padding: 15px;
+    background-color: #7289DA;
+}
+
+a:visited {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+a:active {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+}

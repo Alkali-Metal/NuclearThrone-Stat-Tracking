@@ -1,0 +1,14 @@
+{
+  "API_url": "https://tb-api.xyz/stream/get",
+  "game_id": "Testing",
+  "steam_id": "123456789",
+  "live_logging": false,
+  "logging": {
+    "enabled": true,
+    "game_types": [
+      "normal",
+      "weekly",
+      "daily"
+    ]
+  }
+}

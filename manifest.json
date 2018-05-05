@@ -1,0 +1,16 @@
+{
+  "name": "Nuclear Throne Statistics Tracking",
+  "description": "An extension that allows tracking and visualization of Nuclear Throne runs in the game.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "scripts/toggle_logging.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}

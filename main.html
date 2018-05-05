@@ -1,0 +1,63 @@
+<!DOCTYPE html5>
+<html>
+    
+
+    <body>
+
+        <!-- THE ONE HEADER TO RULE THEM ALL -->
+        <div id="title">
+            <h1>
+                Nuclear Throne Statistics
+            </h1>
+        </div>
+
+        <!-- Make it obvious that we didn't pay for amcharts lib -->
+        <div class="text">
+            Graphs kindly produced by: <a href="https://www.amcharts.com/javascript-charts/" title="Click me to visit their website!">AMCHARTS</a>
+        </div>
+
+        </br>
+        </br>
+
+        <!-- Control panel for logging and generating the graphs -->
+        <div>
+
+
+            <!-- Control Panel Title -->
+            <h2 class="text">
+                Control Panel
+            </h2>
+
+
+            <div id="api_data_input">
+
+                <!-- Input boxes for API retrieval -->
+                <input id="steam_input" placeholder="STEAM ID:">
+                </br>
+                <input id="game_input" placeholder="GAME STREAM ID:">
+            </div>
+
+            <!-- Toggle Logging -->
+            <button>Toggle Logging</button>
+
+        </div>
+
+    </body>
+    <head>
+        <title>Nuclear Throne Statistics</title>
+
+
+        <!-- Load local code & styling-->
+        <link rel="stylesheet" href="./styles/inputs.css">
+        <link rel="stylesheet" href="./styles/main.css">
+
+        <script src="./program/functions/toggle_logging.js"></script>
+        <script src="./program/functions/set_default_inputs.js"></script>
+
+
+        <!-- Load Code from CDNs -->
+        <!--<script src="www.amcharts.com/lib/3/amcharts.js"></script-->
+
+
+    </head>
+</html>
