@@ -46,7 +46,6 @@ def update(run):
 
 
 while True:
-    print("=== Getting Data ===") #TODO: Remove when done debugging
 
     # Get the data from the API
     info = get(url).json()
@@ -69,7 +68,7 @@ while True:
         cont = input("I have detected a lack of information (Make sure that your Stream Key is enabled in the game), would you like me to continue logging? (Y/N) ").lower()
         print("==========================") # NOTE: Leaving here as a separator
 
-        # We are continueing logging
+        # We are continuing logging
         if cont in ["y", "yes"]:
             try_count += 1
             pass
@@ -84,7 +83,6 @@ while True:
 
     # See if we have a previous run to log.
     if previous:
-        print("Logging Previous Run") # TODO: Remove when done debugging
         latest_run["timestamp"] = None
         update(previous)
 
@@ -94,7 +92,4 @@ while True:
         print("Updating live info")
         live_update.update_txt(current)
 
-
-    # Wait 15 seconds for it to update again
-    print("====================") # TODO: Remove when done debugging
     sleep(15)
